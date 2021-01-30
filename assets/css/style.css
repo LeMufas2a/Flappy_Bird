@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-body 
+body {
   margin: 0;
   text-align: center;
   font-family: "Press Start 2P", cursive;
@@ -22,7 +22,6 @@ h1 {
   justify-content: space-between;
   padding: 8px 6px;
   background: #5EE270;
-  
 }
 
 /*# sourceMappingURL=style.css.map */
