@@ -19,12 +19,17 @@ let index = 0,
     flight,
     flyheight;
 
+/* Fonction  animations */
 const render = () => {
     index++;
 
+    //  background
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.clientHeight, -((index * (speed / 2)) % canvas.width) + canvas.width, 0, canvas.width, canvas.clientHeight);
 
-    ctx.drawImage(img, 432, 0, ...size, ((canvas.width / 2) - size
-    [0] / 2), flyheight, ...size);
+
+
+    ctx.drawImage(img, 432, Math.floor((index % 9) / 3) * size[1], ...size, ((canvas.width / 2) - size[0] / 2), flyheight, ...size)
+    flyheight = (canvas.clientHeight / 2) - (size[1] / 2);
 
     window.requestAnimationFrame(render);
 }
