@@ -1,0 +1,11 @@
+*.log
+.cache
+.coverage
+.coverage.*
+.nyc_output
+.sass-cache
+.vs/
+.vscode
+core
+coverage
+node_modules
